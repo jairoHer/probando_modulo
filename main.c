@@ -11,11 +11,11 @@
 struct task_struct *task;        /*    Structure defined in sched.h for tasks/processes    */
 struct task_struct *task_child;        /*    Structure needed to iterate through task children    */
 struct list_head *list;            /*    Structure needed to iterate through the list in each task->children struct    */
-
+struct mm_struct *mm;
 int iterate_init(void)                    /*    Init Module    */
 {
     printk(KERN_INFO "%s","LOADING MODULE\n");    /*    good practice to log when loading/removing modules    */
-    struct mm_struct *mm;
+    
     for_each_process( task ){            /*    for_each_process() MACRO for iterating through each task in the os located in linux\sched\signal.h    */
 	mm = get_task_mm(task);
         printk(KERN_INFO "\nPARENT PID: %d PROCESS: %s STATE: %ld MEMORIA: %d",task->pid, task->comm, task->state, mm->total_mm);/*    log parent id/executable name/state    */
