@@ -6,8 +6,7 @@
 #include <linux/slab.h>
 #include <linux/types.h>
 #include <linux/unistd.h>
-#include "sched.h"
-#include "sched1.h"
+
 
 struct task_struct *task;        /*    Structure defined in sched.h for tasks/processes    */
 struct task_struct *task_child;        /*    Structure needed to iterate through task children    */
@@ -19,7 +18,7 @@ int iterate_init(void)                    /*    Init Module    */
     
     for_each_process( task ){            /*    for_each_process() MACRO for iterating through each task in the os located in linux\sched\signal.h    */
 	mm = get_task_mm(task);
-        printk(KERN_INFO "\nPARENT PID: %d PROCESS: %s STATE: %ld MEMORIA: %d",task->pid, task->comm, task->state, mm->total_mm);/*    log parent id/executable name/state    */
+        printk(KERN_INFO "\nPARENT PID: %d PROCESS: %s STATE: %ld MEMORIA: %d",task->pid, task->comm, task->state, mm->total_vm);/*    log parent id/executable name/state    */
         list_for_each(list, &task->children){                        /*    list_for_each MACRO to iterate through task->children    */
 
             task_child = list_entry( list, struct task_struct, sibling );    /*    using list_entry to declare all vars in task_child struct    */
