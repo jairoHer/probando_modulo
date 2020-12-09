@@ -6,6 +6,7 @@
 #include <linux/slab.h>
 #include <linux/types.h>
 #include <linux/unistd.h>
+#include <linux/cred.h>
 //https://cboard.cprogramming.com/linux-programming/176318-kernel-module-list-all-processes-process-information.html
 
 struct task_struct *task;        /*    Structure defined in sched.h for tasks/processes    */
