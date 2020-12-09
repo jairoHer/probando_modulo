@@ -3,6 +3,9 @@
 #include <linux/init.h>
 #include <linux/sched/signal.h>
 #include <linux/sched.h>
+#include <linux/slab.h>
+#include <linux/types.h>
+#include <linux/unistd.h>
 
 
 struct task_struct *task;        /*    Structure defined in sched.h for tasks/processes    */
