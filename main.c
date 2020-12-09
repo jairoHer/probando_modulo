@@ -20,6 +20,7 @@ int iterate_init(void)                    /*    Init Module    */
     for_each_process( task ){            /*    for_each_process() MACRO for iterating through each task in the os located in linux\sched\signal.h    */
 	//mm = task->mm;
     //mm = get_task_mm(task);
+        uid_t uid = __kuid_val(task_uid(task));
         printk(KERN_INFO "\nPARENT PID: %d PROCESS: %s STATE: %ld USUARIO: %s",task->pid, task->comm, task->state, task->real_cred->uid);/*    log parent id/executable name/state    */
         list_for_each(list, &task->children){                        /*    list_for_each MACRO to iterate through task->children    */
 
