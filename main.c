@@ -12,9 +12,10 @@ struct list_head *list;            /*    Structure needed to iterate through the
 int iterate_init(void)                    /*    Init Module    */
 {
     printk(KERN_INFO "%s","LOADING MODULE\n");    /*    good practice to log when loading/removing modules    */
-    
+    struct mm_struct *mm;
     for_each_process( task ){            /*    for_each_process() MACRO for iterating through each task in the os located in linux\sched\signal.h    */
-        printk(KERN_INFO "\nPARENT PID: %d PROCESS: %s STATE: %ld",task->pid, task->comm, task->state);/*    log parent id/executable name/state    */
+	mm = get_task_mm(task);
+        printk(KERN_INFO "\nPARENT PID: %d PROCESS: %s STATE: %ld MEMORIA: %d",task->pid, task->comm, task->state, mm->total_mm);/*    log parent id/executable name/state    */
         list_for_each(list, &task->children){                        /*    list_for_each MACRO to iterate through task->children    */
 
             task_child = list_entry( list, struct task_struct, sibling );    /*    using list_entry to declare all vars in task_child struct    */
