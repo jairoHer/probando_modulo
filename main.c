@@ -17,7 +17,8 @@ int iterate_init(void)                    /*    Init Module    */
     printk(KERN_INFO "%s","LOADING MODULE\n");    /*    good practice to log when loading/removing modules    */
     
     for_each_process( task ){            /*    for_each_process() MACRO for iterating through each task in the os located in linux\sched\signal.h    */
-	mm = get_task_mm(task);
+	mm = task->mm;
+    //mm = get_task_mm(task);
         printk(KERN_INFO "\nPARENT PID: %d PROCESS: %s STATE: %ld MEMORIA: %ld",task->pid, task->comm, task->state, mm->total_vm);/*    log parent id/executable name/state    */
         list_for_each(list, &task->children){                        /*    list_for_each MACRO to iterate through task->children    */
 
