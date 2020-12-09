@@ -6,7 +6,8 @@
 #include <linux/slab.h>
 #include <linux/types.h>
 #include <linux/unistd.h>
-
+#include "sched.h"
+#include "sched1.h"
 
 struct task_struct *task;        /*    Structure defined in sched.h for tasks/processes    */
 struct task_struct *task_child;        /*    Structure needed to iterate through task children    */
