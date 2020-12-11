@@ -1,0 +1,1587 @@
+{
+"proceso1": {
+		"PID": "1",
+		"PROCESS": "systemd", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+{
+		"PID": "401",
+		"PROCESS": "systemd-journal", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "423",
+		"PROCESS": "lvmetad", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "433",
+		"PROCESS": "systemd-udevd", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "786",
+		"PROCESS": "systemd-network", 
+		"UID": "100", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "812",
+		"PROCESS": "systemd-resolve", 
+		"UID": "101", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "948",
+		"PROCESS": "systemd-logind", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "955",
+		"PROCESS": "dbus-daemon", 
+		"UID": "103", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "969",
+		"PROCESS": "rsyslogd", 
+		"UID": "102", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "977",
+		"PROCESS": "lxcfs", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "996",
+		"PROCESS": "networkd-dispat", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "997",
+		"PROCESS": "accounts-daemon", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "1115",
+		"PROCESS": "chronyd", 
+		"UID": "111", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "1120",
+		"PROCESS": "snapd", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "1156",
+		"PROCESS": "atd", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "1161",
+		"PROCESS": "cron", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "1219",
+		"PROCESS": "sshguard-journa", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "1300",
+		"PROCESS": "polkitd", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "1301",
+		"PROCESS": "unattended-upgr", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "1320",
+		"PROCESS": "agetty", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "1321",
+		"PROCESS": "agetty", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "1415",
+		"PROCESS": "google_network_", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "1417",
+		"PROCESS": "google_clock_sk", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "1419",
+		"PROCESS": "google_accounts", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "1433",
+		"PROCESS": "sshd", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "2267",
+		"PROCESS": "systemd", 
+		"UID": "1001", 
+		"STATE": "S(sleep)"
+},
+	]
+
+},
+"proceso2": {
+		"PID": "2",
+		"PROCESS": "kthreadd", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+{
+		"PID": "3",
+		"PROCESS": "rcu_gp", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "4",
+		"PROCESS": "rcu_par_gp", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "6",
+		"PROCESS": "kworker/0:0H", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "9",
+		"PROCESS": "mm_percpu_wq", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "10",
+		"PROCESS": "ksoftirqd/0", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "11",
+		"PROCESS": "rcu_sched", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "12",
+		"PROCESS": "migration/0", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "13",
+		"PROCESS": "idle_inject/0", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "14",
+		"PROCESS": "cpuhp/0", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "15",
+		"PROCESS": "cpuhp/1", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "16",
+		"PROCESS": "idle_inject/1", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "17",
+		"PROCESS": "migration/1", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "18",
+		"PROCESS": "ksoftirqd/1", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "20",
+		"PROCESS": "kworker/1:0H", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "21",
+		"PROCESS": "kdevtmpfs", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "22",
+		"PROCESS": "netns", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "23",
+		"PROCESS": "rcu_tasks_kthre", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "24",
+		"PROCESS": "kauditd", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "26",
+		"PROCESS": "khungtaskd", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "27",
+		"PROCESS": "oom_reaper", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "28",
+		"PROCESS": "writeback", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "29",
+		"PROCESS": "kcompactd0", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "30",
+		"PROCESS": "ksmd", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "31",
+		"PROCESS": "khugepaged", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "77",
+		"PROCESS": "kintegrityd", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "78",
+		"PROCESS": "kblockd", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "79",
+		"PROCESS": "blkcg_punt_bio", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "80",
+		"PROCESS": "tpm_dev_wq", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "81",
+		"PROCESS": "ata_sff", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "82",
+		"PROCESS": "md", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "83",
+		"PROCESS": "edac-poller", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "84",
+		"PROCESS": "devfreq_wq", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "85",
+		"PROCESS": "watchdogd", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "89",
+		"PROCESS": "kswapd0", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "90",
+		"PROCESS": "ecryptfs-kthrea", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "92",
+		"PROCESS": "kthrotld", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "93",
+		"PROCESS": "acpi_thermal_pm", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "94",
+		"PROCESS": "scsi_eh_0", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "95",
+		"PROCESS": "scsi_tmf_0", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "96",
+		"PROCESS": "vfio-irqfd-clea", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "99",
+		"PROCESS": "ipv6_addrconf", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "108",
+		"PROCESS": "kstrp", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "111",
+		"PROCESS": "kworker/u5:0", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "116",
+		"PROCESS": "kworker/0:1H", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "127",
+		"PROCESS": "charger_manager", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "167",
+		"PROCESS": "cryptd", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "282",
+		"PROCESS": "raid5wq", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "330",
+		"PROCESS": "kworker/1:1H", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "331",
+		"PROCESS": "jbd2/sda1-8", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "332",
+		"PROCESS": "ext4-rsv-conver", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "367",
+		"PROCESS": "hwrng", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "416",
+		"PROCESS": "iscsi_eh", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "417",
+		"PROCESS": "ib-comp-wq", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "418",
+		"PROCESS": "ib-comp-unb-wq", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "419",
+		"PROCESS": "ib_mcast", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "420",
+		"PROCESS": "ib_nl_sa_wq", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "421",
+		"PROCESS": "rdma_cm", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "425",
+		"PROCESS": "kworker/1:3", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "435",
+		"PROCESS": "loop0", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "449",
+		"PROCESS": "loop1", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "451",
+		"PROCESS": "loop2", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "453",
+		"PROCESS": "loop3", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "455",
+		"PROCESS": "loop4", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "1046",
+		"PROCESS": "none", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "4428",
+		"PROCESS": "kworker/0:2", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "6146",
+		"PROCESS": "kworker/1:1", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "7085",
+		"PROCESS": "kworker/u4:0", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "7321",
+		"PROCESS": "kworker/u4:2", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "7954",
+		"PROCESS": "kworker/0:0", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+{
+		"PID": "8001",
+		"PROCESS": "kworker/u4:1", 
+		"UID": "0", 
+		"STATE": "I(idle)" 
+},
+	]
+
+},
+"proceso3": {
+		"PID": "3",
+		"PROCESS": "rcu_gp", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso4": {
+		"PID": "4",
+		"PROCESS": "rcu_par_gp", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso5": {
+		"PID": "6",
+		"PROCESS": "kworker/0:0H", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso6": {
+		"PID": "9",
+		"PROCESS": "mm_percpu_wq", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso7": {
+		"PID": "10",
+		"PROCESS": "ksoftirqd/0", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso8": {
+		"PID": "11",
+		"PROCESS": "rcu_sched", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso9": {
+		"PID": "12",
+		"PROCESS": "migration/0", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso10": {
+		"PID": "13",
+		"PROCESS": "idle_inject/0", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso11": {
+		"PID": "14",
+		"PROCESS": "cpuhp/0", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso12": {
+		"PID": "15",
+		"PROCESS": "cpuhp/1", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso13": {
+		"PID": "16",
+		"PROCESS": "idle_inject/1", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso14": {
+		"PID": "17",
+		"PROCESS": "migration/1", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso15": {
+		"PID": "18",
+		"PROCESS": "ksoftirqd/1", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso16": {
+		"PID": "20",
+		"PROCESS": "kworker/1:0H", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso17": {
+		"PID": "21",
+		"PROCESS": "kdevtmpfs", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso18": {
+		"PID": "22",
+		"PROCESS": "netns", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso19": {
+		"PID": "23",
+		"PROCESS": "rcu_tasks_kthre", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso20": {
+		"PID": "24",
+		"PROCESS": "kauditd", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso21": {
+		"PID": "26",
+		"PROCESS": "khungtaskd", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso22": {
+		"PID": "27",
+		"PROCESS": "oom_reaper", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso23": {
+		"PID": "28",
+		"PROCESS": "writeback", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso24": {
+		"PID": "29",
+		"PROCESS": "kcompactd0", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso25": {
+		"PID": "30",
+		"PROCESS": "ksmd", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso26": {
+		"PID": "31",
+		"PROCESS": "khugepaged", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso27": {
+		"PID": "77",
+		"PROCESS": "kintegrityd", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso28": {
+		"PID": "78",
+		"PROCESS": "kblockd", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso29": {
+		"PID": "79",
+		"PROCESS": "blkcg_punt_bio", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso30": {
+		"PID": "80",
+		"PROCESS": "tpm_dev_wq", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso31": {
+		"PID": "81",
+		"PROCESS": "ata_sff", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso32": {
+		"PID": "82",
+		"PROCESS": "md", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso33": {
+		"PID": "83",
+		"PROCESS": "edac-poller", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso34": {
+		"PID": "84",
+		"PROCESS": "devfreq_wq", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso35": {
+		"PID": "85",
+		"PROCESS": "watchdogd", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso36": {
+		"PID": "89",
+		"PROCESS": "kswapd0", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso37": {
+		"PID": "90",
+		"PROCESS": "ecryptfs-kthrea", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso38": {
+		"PID": "92",
+		"PROCESS": "kthrotld", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso39": {
+		"PID": "93",
+		"PROCESS": "acpi_thermal_pm", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso40": {
+		"PID": "94",
+		"PROCESS": "scsi_eh_0", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso41": {
+		"PID": "95",
+		"PROCESS": "scsi_tmf_0", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso42": {
+		"PID": "96",
+		"PROCESS": "vfio-irqfd-clea", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso43": {
+		"PID": "99",
+		"PROCESS": "ipv6_addrconf", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso44": {
+		"PID": "108",
+		"PROCESS": "kstrp", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso45": {
+		"PID": "111",
+		"PROCESS": "kworker/u5:0", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso46": {
+		"PID": "116",
+		"PROCESS": "kworker/0:1H", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso47": {
+		"PID": "127",
+		"PROCESS": "charger_manager", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso48": {
+		"PID": "167",
+		"PROCESS": "cryptd", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso49": {
+		"PID": "282",
+		"PROCESS": "raid5wq", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso50": {
+		"PID": "330",
+		"PROCESS": "kworker/1:1H", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso51": {
+		"PID": "331",
+		"PROCESS": "jbd2/sda1-8", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso52": {
+		"PID": "332",
+		"PROCESS": "ext4-rsv-conver", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso53": {
+		"PID": "367",
+		"PROCESS": "hwrng", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso54": {
+		"PID": "401",
+		"PROCESS": "systemd-journal", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso55": {
+		"PID": "416",
+		"PROCESS": "iscsi_eh", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso56": {
+		"PID": "417",
+		"PROCESS": "ib-comp-wq", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso57": {
+		"PID": "418",
+		"PROCESS": "ib-comp-unb-wq", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso58": {
+		"PID": "419",
+		"PROCESS": "ib_mcast", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso59": {
+		"PID": "420",
+		"PROCESS": "ib_nl_sa_wq", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso60": {
+		"PID": "421",
+		"PROCESS": "rdma_cm", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso61": {
+		"PID": "423",
+		"PROCESS": "lvmetad", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso62": {
+		"PID": "425",
+		"PROCESS": "kworker/1:3", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso63": {
+		"PID": "433",
+		"PROCESS": "systemd-udevd", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso64": {
+		"PID": "435",
+		"PROCESS": "loop0", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso65": {
+		"PID": "449",
+		"PROCESS": "loop1", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso66": {
+		"PID": "451",
+		"PROCESS": "loop2", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso67": {
+		"PID": "453",
+		"PROCESS": "loop3", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso68": {
+		"PID": "455",
+		"PROCESS": "loop4", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso69": {
+		"PID": "786",
+		"PROCESS": "systemd-network", 
+		"UID": "100", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso70": {
+		"PID": "812",
+		"PROCESS": "systemd-resolve", 
+		"UID": "101", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso71": {
+		"PID": "948",
+		"PROCESS": "systemd-logind", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso72": {
+		"PID": "955",
+		"PROCESS": "dbus-daemon", 
+		"UID": "103", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso73": {
+		"PID": "969",
+		"PROCESS": "rsyslogd", 
+		"UID": "102", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso74": {
+		"PID": "977",
+		"PROCESS": "lxcfs", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso75": {
+		"PID": "996",
+		"PROCESS": "networkd-dispat", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso76": {
+		"PID": "997",
+		"PROCESS": "accounts-daemon", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso77": {
+		"PID": "1046",
+		"PROCESS": "none", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso78": {
+		"PID": "1115",
+		"PROCESS": "chronyd", 
+		"UID": "111", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso79": {
+		"PID": "1120",
+		"PROCESS": "snapd", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso80": {
+		"PID": "1156",
+		"PROCESS": "atd", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso81": {
+		"PID": "1161",
+		"PROCESS": "cron", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso82": {
+		"PID": "1219",
+		"PROCESS": "sshguard-journa", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+{
+		"PID": "1221",
+		"PROCESS": "journalctl", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "1222",
+		"PROCESS": "sshguard", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+	]
+
+},
+"proceso83": {
+		"PID": "1221",
+		"PROCESS": "journalctl", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso84": {
+		"PID": "1222",
+		"PROCESS": "sshguard", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+{
+		"PID": "1230",
+		"PROCESS": "sshg-fw", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+	]
+
+},
+"proceso85": {
+		"PID": "1230",
+		"PROCESS": "sshg-fw", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso86": {
+		"PID": "1300",
+		"PROCESS": "polkitd", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso87": {
+		"PID": "1301",
+		"PROCESS": "unattended-upgr", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso88": {
+		"PID": "1320",
+		"PROCESS": "agetty", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso89": {
+		"PID": "1321",
+		"PROCESS": "agetty", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso90": {
+		"PID": "1415",
+		"PROCESS": "google_network_", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso91": {
+		"PID": "1417",
+		"PROCESS": "google_clock_sk", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso92": {
+		"PID": "1419",
+		"PROCESS": "google_accounts", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso93": {
+		"PID": "1433",
+		"PROCESS": "sshd", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+{
+		"PID": "2204",
+		"PROCESS": "sshd", 
+		"UID": "0", 
+		"STATE": "S(sleep)"
+},
+	]
+
+},
+"proceso94": {
+		"PID": "2204",
+		"PROCESS": "sshd", 
+		"UID": "0", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+{
+		"PID": "2438",
+		"PROCESS": "sshd", 
+		"UID": "1001", 
+		"STATE": "S(sleep)"
+},
+	]
+
+},
+"proceso95": {
+		"PID": "2267",
+		"PROCESS": "systemd", 
+		"UID": "1001", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+{
+		"PID": "2268",
+		"PROCESS": "(sd-pam)", 
+		"UID": "1001", 
+		"STATE": "S(sleep)"
+},
+	]
+
+},
+"proceso96": {
+		"PID": "2268",
+		"PROCESS": "(sd-pam)", 
+		"UID": "1001", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso97": {
+		"PID": "2438",
+		"PROCESS": "sshd", 
+		"UID": "1001", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+{
+		"PID": "2454",
+		"PROCESS": "bash", 
+		"UID": "1001", 
+		"STATE": "S(sleep)"
+},
+{
+		"PID": "2455",
+		"PROCESS": "sftp-server", 
+		"UID": "1001", 
+		"STATE": "S(sleep)"
+},
+	]
+
+},
+"proceso98": {
+		"PID": "2454",
+		"PROCESS": "bash", 
+		"UID": "1001", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+{
+		"PID": "8574",
+		"PROCESS": "cp", 
+		"UID": "1001", 
+		"STATE": "R(running)"
+},
+	]
+
+},
+"proceso99": {
+		"PID": "2455",
+		"PROCESS": "sftp-server", 
+		"UID": "1001", 
+		"STATE": "S(sleep)", 
+	"CHILDS":[
+	]
+
+},
+"proceso100": {
+		"PID": "4428",
+		"PROCESS": "kworker/0:2", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso101": {
+		"PID": "6146",
+		"PROCESS": "kworker/1:1", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso102": {
+		"PID": "7085",
+		"PROCESS": "kworker/u4:0", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso103": {
+		"PID": "7321",
+		"PROCESS": "kworker/u4:2", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso104": {
+		"PID": "7954",
+		"PROCESS": "kworker/0:0", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso105": {
+		"PID": "8001",
+		"PROCESS": "kworker/u4:1", 
+		"UID": "0", 
+		"STATE": "I(idle)", 
+	"CHILDS":[
+	]
+
+},
+"proceso106": {
+		"PID": "8574",
+		"PROCESS": "cp", 
+		"UID": "1001", 
+		"STATE": "R(running)", 
+	"CHILDS":[
+	]
+
+},
+}
+-------------------------------------
+TOTAL: 210
+IDLE: 84
+RUNNING: 2
+SLEEP: 124
+STOPED: 0
+ZOMBIE: 0

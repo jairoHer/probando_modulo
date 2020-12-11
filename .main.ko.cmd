@@ -1,0 +1,1 @@
+cmd_/home/jairophg_lalala2014/probando_modulo/main.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000  --build-id  -T ./scripts/module-common.lds -o /home/jairophg_lalala2014/probando_modulo/main.ko /home/jairophg_lalala2014/probando_modulo/main.o /home/jairophg_lalala2014/probando_modulo/main.mod.o;  true
