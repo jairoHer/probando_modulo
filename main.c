@@ -1,55 +1,123 @@
-#include <linux/kernel.h>
 #include <linux/module.h>
+#include <linux/moduleparam.h>
 #include <linux/init.h>
+#include <linux/kernel.h>   
+#include <linux/proc_fs.h>
+#include <linux/uaccess.h>
+#include <linux/fs.h>
+#include <linux/utsname.h>
+#include <linux/mm.h>
+#include <linux/swapfile.h>
+#include <linux/seq_file.h>
 #include <linux/sched/signal.h>
 #include <linux/sched.h>
 #include <linux/slab.h>
 #include <linux/types.h>
 #include <linux/unistd.h>
 #include <linux/cred.h>
-#include <unistd.h>
-#include <sys/types.h>
-//https://cboard.cprogramming.com/linux-programming/176318-kernel-module-list-all-processes-process-information.html
+#define BUFSIZE  1000
+struct task_struct *task;        /* Estructura definida en sched.h */
+struct task_struct *task_child;  /* Estructura para iterar los procesos hijo */
+struct list_head *list;          /* Estructura necesaria para iterar la lista de hijos   */
 
-struct task_struct *task;        /*    Structure defined in sched.h for tasks/processes    */
-struct task_struct *task_child;        /*    Structure needed to iterate through task children    */
-struct list_head *list;            /*    Structure needed to iterate through the list in each task->children struct    */
-struct mm_struct *mm;
-int iterate_init(void)                    /*    Init Module    */
-{
-    printk(KERN_INFO "%s","LOADING MODULE\n");    /*    good practice to log when loading/removing modules    */
-    
-    for_each_process( task ){            /*    for_each_process() MACRO for iterating through each task in the os located in linux\sched\signal.h    */
-	//mm = task->mm;
-    //mm = get_task_mm(task);
-        uid_t uid = __kuid_val(task_uid(task));
-        printk(KERN_INFO "\nPARENT PID: %d PROCESS: %s STATE: %ld USUARIO: %d",task->pid, task->comm, task->state, uid);/*    log parent id/executable name/state    */
-        list_for_each(list, &task->children){                        /*    list_for_each MACRO to iterate through task->children    */
+unsigned long copy_to_user(void __user *to,const void *from, unsigned long n);
+unsigned long copy_from_user(void *to,const void __user *from,unsigned long n);
+MODULE_LICENSE("PROCESOS");
+MODULE_AUTHOR("201503750");
+/*int proc_idle = 0;
+int proc_running = 0;
+int proc_sleep = 0;
+int proc_stoped = 0;
+int proc_zombie = 0;
+uid_t uid;*/
+static struct proc_dir_entry *ent;
 
-            task_child = list_entry( list, struct task_struct, sibling );    /*    using list_entry to declare all vars in task_child struct    */
-    
-            printk(KERN_INFO "\nCHILD OF %s[%d] PID: %d PROCESS: %s STATE: %ld",task->comm, task->pid, /*    log child of and child pid/name/state    */
-                task_child->pid, task_child->comm, task_child->state);
+static int myread (struct seq_file *buff, void *v){
+    int proc_idle = 0;
+    int proc_running = 0;
+    int proc_sleep = 0;
+    int proc_stoped = 0;
+    int proc_zombie = 0;
+    int num_proc = 0;
+    uid_t uid;
+    printk(KERN_INFO "EMPEZANDO MODULO PROCESOS\n");
+    seq_printf(buff, "%s\"procesos\":[","{\n");
+    for_each_process( task ){            /*    for_each_process() es un MACRO para iterar ubicado en linux\sched\signal.h    */
+        uid = __kuid_val(task_uid(task));
+        num_proc++;
+        seq_printf(buff, "%s",num_proc,"{\n");
+        if(task->state == 1026){
+            seq_printf(buff, "\t\t\"PID\": \"%d\",\n\t\t\"PROCESS\": \"%s\", \n\t\t\"UID\": \"%d\", \n\t\t\"STATE\": \"%s\", \n\t\"CHILDS\":[\n", task->pid, task->comm, uid, "I(idle)");
+            proc_idle++;
         }
-        printk("-----------------------------------------------------");    /*for aesthetics*/
+        if(task->state == 0){
+            seq_printf(buff, "\t\t\"PID\": \"%d\",\n\t\t\"PROCESS\": \"%s\", \n\t\t\"UID\": \"%d\", \n\t\t\"STATE\": \"%s\", \n\t\"CHILDS\":[\n", task->pid, task->comm, uid, "R(running)");
+            proc_running++;
+        }
+        if(task->state == 1){
+            seq_printf(buff, "\t\t\"PID\": \"%d\",\n\t\t\"PROCESS\": \"%s\", \n\t\t\"UID\": \"%d\", \n\t\t\"STATE\": \"%s\", \n\t\"CHILDS\":[\n", task->pid, task->comm, uid, "S(sleep)");
+            proc_sleep++;
+        }
+
+        list_for_each(list, &task->children){                        /*    list_for_each MACRO para iterar task->children    */
+            task_child = list_entry( list, struct task_struct, sibling );    /*    using list_entry to declare all vars in task_child struct    */
+            seq_printf(buff, "%s","{\n");
+            uid = __kuid_val(task_uid(task_child));
+            if(task_child->state == 1026){
+                seq_printf(buff, "\t\t\"PID\": \"%d\",\n\t\t\"PROCESS\": \"%s\", \n\t\t\"UID\": \"%d\", \n\t\t\"STATE\": \"%s\" ", task_child->pid, task_child->comm, uid, "I(idle)");
+                proc_idle++;
+            }
+            if(task_child->state == 0){
+                seq_printf(buff, "\t\t\"PID\": \"%d\",\n\t\t\"PROCESS\": \"%s\", \n\t\t\"UID\": \"%d\", \n\t\t\"STATE\": \"%s\"", task_child->pid, task_child->comm, uid, "R(running)");
+                proc_running++;
+            }
+            if(task_child->state == 1){
+                seq_printf(buff, "\t\t\"PID\": \"%d\",\n\t\t\"PROCESS\": \"%s\", \n\t\t\"UID\": \"%d\", \n\t\t\"STATE\": \"%s\"", task_child->pid, task_child->comm, uid, "S(sleep)");
+                proc_sleep++;
+            }
+            seq_printf(buff, "%s","\n},\n");
+        }
+        seq_printf(buff, "%s","\t]\n\n},\n");
     }    
+    seq_printf(buff, "%s","]}\n");
+    seq_printf(buff, "%s","-------------------------------------\n");
+    seq_printf(buff, "TOTAL: %d\n",proc_idle+proc_running+proc_sleep);
+    seq_printf(buff, "IDLE: %d\n",proc_idle);
+    seq_printf(buff, "RUNNING: %d\n",proc_running);
+    seq_printf(buff, "SLEEP: %d\n",proc_sleep);
+    seq_printf(buff, "STOPED: %d\n",proc_stoped);
+    seq_printf(buff, "ZOMBIE: %d\n",proc_zombie);
     
-
     return 0;
+}
 
-}                /*    End of Init Module    */
+
+static int proc_init (struct inode *inode, struct file *file){
+    return single_open(file,myread,NULL);
+}
     
-void cleanup_exit(void)        /*    Exit Module    */
+
+static const struct file_operations myops ={
+    .owner =THIS_MODULE,
+    .read=seq_read,
+    .release=single_release,
+    .open=proc_init,
+    .llseek=seq_lseek
+};
+
+static int simple_init(void){
+
+    printk(KERN_INFO "EMPEZANDO MODULO PROCESOS\n");
+    ent=proc_create("proc_procesos",0,NULL,&myops);
+    return 0;
+}
+
+static void simple_cleanup(void)
 {
+    printk(KERN_INFO "TERMINANDO MODULO\n");
+    proc_remove(ent);
 
+}
 
-    printk(KERN_INFO "%s","REMOVING MODULE\n");
-
-}                /*    End of Exit Module    */
-
-module_init(iterate_init);    /*    Load Module MACRO    */
-module_exit(cleanup_exit);    /*    Remove Module MACRO    */
-
-MODULE_LICENSE("GPL");
-MODULE_DESCRIPTION("ITERATE THROUGH ALL PROCESSES/CHILD PROCESSES IN THE OS");
-MODULE_AUTHOR("Laerehte");
+module_init(simple_init);
+module_exit(simple_cleanup);
